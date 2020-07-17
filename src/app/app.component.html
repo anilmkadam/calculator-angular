@@ -1,0 +1,67 @@
+<div class="container mr-10">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3>Angular Calculator</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <input type="text" class="form-control height-100" [value]="result" disabled>
+      </div>
+    </div>
+    <div class="row margin-10">
+      <div class="col-md-3">
+        <button class="btn" value="9" (click)="onNumberClick($event)">9</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn" value="8" (click)="onNumberClick($event)">8</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn" value="7" (click)="onNumberClick($event)">7</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-info" value="/" (click)="onOperatorClick($event)">/</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <button class="btn" value="6" (click)="onNumberClick($event)">6</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn" value="5" (click)="onNumberClick($event)">5</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn" value="4" (click)="onNumberClick($event)">4</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-info" value="*" (click)="onOperatorClick($event)">*</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <button class="btn" value="3" (click)="onNumberClick($event)">3</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn" value="2" (click)="onNumberClick($event)">2</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn" value="1" (click)="onNumberClick($event)">1</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-info" value="-" (click)="onOperatorClick($event)">-</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <button class="btn btn-danger" value="C" (click)="onScreenClear()">C</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn" value="0" (click)="onNumberClick($event)">0</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-info" value="=" (click)="onGetResult()">=</button>
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-info" value="+" (click)="onOperatorClick($event)">+</button>
+      </div>
+    </div>
+  </div>
